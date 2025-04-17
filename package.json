@@ -1,0 +1,26 @@
+{
+  "name": "personeelsplanning-dw-firebase",
+  "version": "1.0.0",
+  "homepage": "https://EviKAltrea.github.io/Personeelsplanning-DW",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}
