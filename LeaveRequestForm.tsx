@@ -1,7 +1,19 @@
 import { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+<div className="mb-4 border rounded p-4 flex gap-2 items-center">
+  <input
+    className="border rounded px-2 py-1 w-full"
+    placeholder="Typ hier je verlofaanvraag (bv. 3 mei - hele dag)"
+    value={newRequest}
+    onChange={(e) => setNewRequest(e.target.value)}
+  />
+  <button
+    className="bg-blue-600 text-white px-4 py-1 rounded"
+    onClick={handleAddRequest}
+  >
+    Toevoegen
+  </button>
+</div>
+
 import { db } from "../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore";
 
